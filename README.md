@@ -1,5 +1,7 @@
 ### Hi there 👋
 
+This is the start of my Personal Website Project in bootcamp. 
+
 <!--
 **Brody-code-designer/brody-code-designer** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
