@@ -1,0 +1,8 @@
+.changeFlexGrow {
+    flex-grow: 0 !important;
+}
+
+.removeBlue {
+    text-decoration: none !important;
+    color: inherit !important;
+}
