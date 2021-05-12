@@ -13,5 +13,6 @@
 /*}*/
 
 .backgroundIMG {
+    background-image: url("./imgs/pwp-background-placeholder.png");
     background-color: transparent;
 }
