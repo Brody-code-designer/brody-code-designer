@@ -6,3 +6,12 @@
     text-decoration: none !important;
     color: inherit !important;
 }
+
+/*.cardImgSize {*/
+/*    width: 10rem;*/
+/*    height: 10rem;*/
+/*}*/
+
+.backgroundIMG {
+    background-color: transparent;
+}
