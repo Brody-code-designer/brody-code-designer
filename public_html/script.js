@@ -6,7 +6,7 @@ window.addEventListener('load', (event) => {
 //function that activates the gif when scrolled into
 const activateGIF = function () {
     let gif = `
-    <img src="imgs/pwp-background-placeholder_4.gif" class="backgroundIMGSize" alt="Galaxy">
+    <img src="imgs/front-page-gif-2.gif" class="backgroundIMGSize" alt="Galaxy">
     `
 
     document.getElementById("gifContainer").innerHTML = gif
