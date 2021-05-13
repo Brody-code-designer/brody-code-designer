@@ -15,4 +15,8 @@
 .backgroundIMG {
     background-image: url("./imgs/pwp-background-placeholder.png");
     background-color: transparent;
+    /*max-width: 100%;*/
+    /*height: auto;*/
+    width: 2559px;
+    height: 853px;
 }
