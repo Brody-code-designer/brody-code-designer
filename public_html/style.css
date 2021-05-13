@@ -17,6 +17,11 @@
     background-color: transparent;
     /*max-width: 100%;*/
     /*height: auto;*/
-    width: 2559px;
-    height: 853px;
+    /*max-width: 100vw;*/
+    /*height: 65vh;*/
+}
+
+.backgroundIMGSize {
+    max-width: 100vw;
+    height: 65vh;
 }
