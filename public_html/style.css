@@ -23,5 +23,11 @@
 
 .backgroundIMGSize {
     width: 100vw;
-    height: 75vh;
+    height: 65vh;
 }
+
+.highlight-text {
+    color: #52eef5;
+}
+
+
