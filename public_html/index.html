@@ -166,22 +166,53 @@
 </main>
 
 
-
-	<section class="container-fluid bg-dark pt-5 text-white" id="contactMe">
-		<div class="mb-3">
-			<label for="exampleFormControlInput1" class="form-label">Email address</label>
-			<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+<!--start of the form-->
+<h2 id="contactMe">testing 123</h2>
+<form action="./apis/" id="contact" method="post" novalidate>
+	<div class="form-group">
+		<label for="name">Name</label>
+		<div class="input-group">
+			<div class="input-group-prepend">
+				<span class="input-group-text"><i class="fa fa-user"></i></span>
+			</div>
+			<input class="form-control" id="name" name="name" placeholder="Your Name" type="text">
 		</div>
-		<div class="mb-3">
-			<label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-			<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-		</div>
-	</section>
-<footer class="container-fluid bg-dark text-white">
-	<div class="row">
-		<div class="col fs-3 text-center">Thanks for Visiting the site!</div>
 	</div>
-</footer>
+	<div class="form-group">
+		<label for="email">Email</label>
+		<div class="input-group">
+			<div class="input-group-prepend">
+				<span class="input-group-text"><i class="fa fa-envelope"></i></span>
+			</div>
+			<input class="form-control" id="email" name="email" placeholder="Your Email" type="email">
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="subject">Subject</label>
+		<div class="input-group">
+			<div class="input-group-prepend">
+				<span class="input-group-text"><i class="fa fa-pencil"></i></span>
+			</div>
+			<input class="form-control" id="subject" name="subject" placeholder="Subject" type="text">
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="message">Message</label>
+		<div class="input-group">
+			<div class="input-group-prepend">
+				<span class="input-group-text"><i class="fa fa-comment"></i></span>
+			</div>
+			<textarea class="form-control" id="message" maxlength="2000" name="message"
+					  placeholder="Your Message (2000 characters max)" required
+					  rows="5"></textarea>
+		</div>
+	</div>
+	<!-- Make sure to add site key provided by google recaptcha -->
+	<!--  <div class="g-recaptcha" data-sitekey=""></div> -->
+	<button class="btn btn-info" type="submit">Submit</button>
+	<button class="btn btn-default" type="reset">Reset</button>
+</form>
+<!--end of the form-->
 
 <script src="script.js"></script>
 <!-- Option 1: Bootstrap Bundle with Popper -->
