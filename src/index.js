@@ -24,7 +24,7 @@ const handlePostRequest = (request, response, next) => {
     //TODO remove when Docker is up and running
     response.header("Access-Control-Allow-Origin", "*")
     console.log(request.body)
-    return(response.json("Thank you for submitting an email"))
+    return(response.json("Thank you for submitting an email")) //not getting a message returned
 }
 
 indexRoute.route("/")
