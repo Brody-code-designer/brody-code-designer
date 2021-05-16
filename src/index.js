@@ -2,6 +2,17 @@
 const express = require("express")
 const morgan = require("morgan")
 const bodyParser = require("body-parser")
+const {check, validationResult} =require("express-validator")
+
+const validation = [
+    check("name", "A valid name is required").not().isEmpty().trim().escape(),
+    check("email", "Please provide a valid email").isEmail(),
+    check("subject").optional().trim().escape(),
+    check("message", "Please provide a message that is under two thousand characters")
+        .trim()
+        .escape().isLength({min:1, max:2000})
+
+]
 
 //initialize Express
 const app = express()
@@ -22,14 +33,22 @@ const handleGetRequest = (request, response, next) => {
 const handlePostRequest = (request, response, next) => {
 
     //TODO remove when Docker is up and running
-    response.header("Access-Control-Allow-Origin", "*")
+    response.append("Content-Type", "text/html")
+    response.append("Access-Control-Allow-Origin", "*")
+
+    const errors = validationResult(request)
+
+    if (errors.isEmpty() === false) {
+        const currentError = errors.array()[0]
+        return response.send(Buffer.from(`<div class="alert alert-danger" role="alert"><strong>Oh snap!</strong> ${currentError.msg}</div>`))
+    }
     console.log(request.body)
     return(response.json("Thank you for submitting an email")) //not getting a message returned
 }
 
 indexRoute.route("/")
     .get(handleGetRequest)
-    .post(handlePostRequest)
+    .post(validation, handlePostRequest)
 
 app.use("/apis", indexRoute)
 
