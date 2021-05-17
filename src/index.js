@@ -3,6 +3,8 @@ const express = require("express")
 const morgan = require("morgan")
 const bodyParser = require("body-parser")
 const {check, validationResult} =require("express-validator")
+const ReCaptcha = require("express-recaptcha").RecaptchaV2
+require('dotenv').config()
 
 const validation = [
     check("name", "A valid name is required").not().isEmpty().trim().escape(),
@@ -11,11 +13,11 @@ const validation = [
     check("message", "Please provide a message that is under two thousand characters")
         .trim()
         .escape().isLength({min:1, max:2000})
-
 ]
 
 //initialize Express
 const app = express()
+const recaptcha = new ReCaptcha(process.env.RECAPTCHA_SITE_KEY, process.env.RECAPTCHA_SECRET_KEY)
 
 // app.use allows for different middleware to be brought into Express
 // Morgan: a logger for express so that we have a record for debugging.
@@ -36,6 +38,10 @@ const handlePostRequest = (request, response, next) => {
     response.append("Content-Type", "text/html")
     response.append("Access-Control-Allow-Origin", "*")
 
+    if (request.recaptcha.error) {
+        return response.send(Buffer.from(`<div class='alert alert-danger' role='alert'><strong>Oh snap!</strong>There was an error with Recaptcha please try again</div>`))
+    }
+
     const errors = validationResult(request)
 
     if (errors.isEmpty() === false) {
@@ -48,7 +54,7 @@ const handlePostRequest = (request, response, next) => {
 
 indexRoute.route("/")
     .get(handleGetRequest)
-    .post(validation, handlePostRequest)
+    .post(recaptcha.middleware.verify, validation, handlePostRequest)
 
 app.use("/apis", indexRoute)
 
