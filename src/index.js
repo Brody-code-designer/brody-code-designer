@@ -5,6 +5,9 @@ const bodyParser = require("body-parser")
 const {check, validationResult} =require("express-validator")
 const ReCaptcha = require("express-recaptcha").RecaptchaV2
 require('dotenv').config()
+const Mailgun = require("mailgun-js")
+
+const mailgun = Mailgun({apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN})
 
 const validation = [
     check("name", "A valid name is required").not().isEmpty().trim().escape(),
@@ -49,7 +52,22 @@ const handlePostRequest = (request, response, next) => {
         return response.send(Buffer.from(`<div class="alert alert-danger" role="alert"><strong>Oh snap!</strong> ${currentError.msg}</div>`))
     }
     console.log(request.body)
-    return(response.json("Thank you for submitting an email")) //not getting a message returned
+    const {email, subject, name, message} = request.body
+
+    const mailgunData = {
+        to: process.env.MAIL_RECIPIENT,
+        from: `${name} <postmaster@${process.env.MAILGUN_DOMAIN}>`,
+        subject: `${email} :${subject}`,
+        text: `${message}`
+    }
+    mailgun.messages().send(mailgunData, (error) => {
+        if (error) {
+            console.log(error)
+            return(response.send(Buffer.from(`<div class='alert alert-danger' role='alert'><strong>Oh
+                snap!</strong> Unable to send email error with email sender.</div>`)))
+        }
+        return response.send(Buffer.from("<div class='alert alert-success' role='alert'>Email successfully sent.</div>"))
+    })
 }
 
 indexRoute.route("/")
