@@ -46,20 +46,15 @@
 
 <main>
 	<section class="container-fluid px-0">
-		<div class="row">
-			<div class="col">
-				<!--				<div class="backgroundIMG backgroundIMGSize" id="gifContainer" onmouseenter="activateGIF()"></div>-->
-				<img class="img-fluid backgroundIMGSize" src="imgs/front-page-gif-2.gif" alt="galaxy">
-			</div>
-		</div>
+		<!--				<div class="backgroundIMG backgroundIMGSize" id="gifContainer" onmouseenter="activateGIF()"></div>-->
+		<img class="img-fluid backgroundIMGSize" src="imgs/front-page-gif-2.gif" alt="galaxy">
 	</section>
 
-	<section class="container-fluid pb-4 pt-3 bg-dark text-white px-5" id="aboutMe">
-		<div class="row pb-5">
+	<section class="container pb-4 pt-3 px-2 bg-dark text-white" id="aboutMe">
+		<div class="row pb-5 justify-content-between">
 			<div class="col-md-8">
-				<!--				TODO: Add highlighted style to key words-->
 				<h1 class="fs-1 fw-bold">About Saiyan Web Development</h1>
-				<p class="fs-3">Welcome to the most <span class="highlight-text">affordable</span> and <span
+				<p class="fs-4 custom-text-about-me">Welcome to the most <span class="highlight-text">affordable</span> and <span
 						class="highlight-text">reliable</span> service for all of your Web Development needs. We can
 					build your own <span class="highlight-text">personal</span> website from the ground up. Your new
 					website will look and work how you want
@@ -70,7 +65,7 @@
 					achieve your <span class="highlight-text">goals</span>. You can <span
 							class="highlight-text">trust</span> that we can make your new website a reality!</p>
 			</div>
-			<div class="col-md-4 d-flex align-items-center">
+			<div class="col-md-1 d-flex align-items-center">
 				<a href="https://github.com/Brody-code-designer" title="GitHub" class="removeBlue">
 					<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
 						 class="bi bi-github" viewBox="0 0 16 16">
@@ -81,14 +76,14 @@
 		</div>
 	</section>
 
-	<section class="container-fluid d-flex justify-content-center bg-dark text-white pb-3" id="services">
+	<section class="container d-flex justify-content-center bg-dark text-white pb-3 px-2" id="services">
 		<div class="row">
 			<div class="col-md-4">
 				<h2 class="text-center fs-1 text-nowrap fw-bold">Services Available</h2>
 			</div>
 		</div>
 	</section>
-	<section class="container-fluid bg-dark text-white fs-4 pb-5 px-5">
+	<section class="container bg-dark text-white fs-4 pb-5 px-2">
 		<div class="row">
 			<div class="col-md-4">
 				<div class="card border border-light border-3 bg-dark text-white">
@@ -153,15 +148,15 @@
 		</div>
 	</section>
 
-	<section class="container-fluid d-flex justify-content-center bg-dark text-white px-5" id="reviews">
+	<section class="container d-flex justify-content-center bg-dark text-white px-2" id="reviews">
 		<div class="row">
 			<div class="col-md-3 pb-3">
 				<h2 class="text-center fs-1 fw-bold">Testimonials</h2>
 			</div>
 		</div>
 	</section>
-	<section class="container-fluid bg-dark">
-		<div class="row px-5 pb-5 justify-content-evenly">
+	<section class="container bg-dark px-2">
+		<div class="row px-5 pb-5 justify-content-between">
 			<div class="col-md-5 p-5 mb-3 bg-info border border-light border-3 rounded-pill">
 				<p class="mb-0 bg-info text-white text-center fs-3 rounded-circle">"Im Goku, a Saiyan who was raised on
 					Earth...or so they tell me."</p>
@@ -176,7 +171,7 @@
 	</section>
 </main>
 
-<section class="container-fluid d-flex justify-content-center bg-dark text-white px-5" id="contactMe">
+<section class="container d-flex justify-content-center bg-dark text-white px-2" id="contactMe">
 	<div class="row">
 		<div class="col-md-3 pb-3">
 			<h2 class="text-center fs-1 fw-bold text-nowrap">Contact Form</h2>
@@ -184,7 +179,7 @@
 	</div>
 </section>
 
-<section class="container bg-dark text-white">
+<section class="container bg-dark text-white px-2">
 	<form action="http://localhost:4200/apis/" id="contact" method="post" novalidate class="">
 		<div class="form-group">
 			<label for="name">Name</label>

@@ -34,4 +34,6 @@ body {
     color: #52eef5;
 }
 
-
+.custom-text-about-me {
+    line-height: 1.5em;
+}
