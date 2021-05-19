@@ -14,34 +14,34 @@
 </head>
 <body>
 <!--<header>-->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top py-0" id="topOfPage">
-		<div class="container-fluid">
-			<a class="navbar-brand fs-1 fw-bold text-white text-wrap" href="#topOfPage">
-								<img src="imgs/dragon-ball-logo.png" alt="logo" width="50" height="50"
-									 class="d-inline-block">
-				Saiyan Web Development</a>
-			<button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-					aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse changeFlexGrow" id="navbarSupportedContent">
-				<div class="navbar-nav ml-auto mb-2 mb-md-0">
-					<a class="nav-link active" aria-current="page" href="#aboutMe">About Me</a>
-					<a class="nav-link" href="#services">Service Plans</a>
-					<a class="nav-link" href="#reviews">Client Reviews</a>
-					<a class="nav-link" href="#contactMe">Contact Me</a>
-				</div>
-			</div>
-		</div>
-	</nav>
-	<div class="container-fluid bg-dark">
-		<div class="row">
-			<div class="col-md-7">
-				<p class="fst-italic fs-3 ms-md-5 mb-0 text-white text-lg-center">Website Development Services</p>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top py-0" id="topOfPage">
+	<div class="container-fluid">
+		<a class="navbar-brand fs-1 fw-bold text-white text-wrap" href="#topOfPage">
+			<img src="imgs/dragon-ball-logo.png" alt="logo" width="50" height="50"
+				 class="d-inline-block">
+			Saiyan Web Development</a>
+		<button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+				aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse changeFlexGrow" id="navbarSupportedContent">
+			<div class="navbar-nav ml-auto mb-2 mb-md-0">
+				<a class="nav-link active" aria-current="page" href="#aboutMe">About Me</a>
+				<a class="nav-link" href="#services">Service Plans</a>
+				<a class="nav-link" href="#reviews">Client Reviews</a>
+				<a class="nav-link" href="#contactMe">Contact Me</a>
 			</div>
 		</div>
 	</div>
+</nav>
+<div class="container-fluid bg-dark">
+	<div class="row">
+		<div class="col-md-7">
+			<p class="fst-italic fs-3 ms-md-5 mb-0 text-white text-lg-center">Website Development Services</p>
+		</div>
+	</div>
+</div>
 <!--</header>-->
 
 <main>
@@ -163,11 +163,13 @@
 	<section class="container-fluid bg-dark">
 		<div class="row px-5 pb-5 justify-content-evenly">
 			<div class="col-md-5 p-5 mb-3 bg-info border border-light border-3 rounded-pill">
-					<p class="mb-0 bg-info text-white text-center fs-3 rounded-circle">"Im Goku, a Saiyan who was raised on Earth...or so they tell me."</p>
-					<footer class="blockquote-footer text-white text-start fs-4 pt-3">Goku</footer>
+				<p class="mb-0 bg-info text-white text-center fs-3 rounded-circle">"Im Goku, a Saiyan who was raised on
+					Earth...or so they tell me."</p>
+				<footer class="blockquote-footer text-white text-start fs-4 pt-3">Goku</footer>
 			</div>
-			<div class="col-md-5 p-5 bg-info border border-light border-3 rounded-pill">
-				<p class="mb-0 bg-info text-white text-center fs-3 rounded-circle">"Im Goku, a Saiyan who was raised on Earth...or so they tell me."</p>
+			<div class="col-md-5 p-5 mb-3 bg-info border border-light border-3 rounded-pill">
+				<p class="mb-0 bg-info text-white text-center fs-3 rounded-circle">"Im Goku, a Saiyan who was raised on
+					Earth...or so they tell me."</p>
 				<footer class="blockquote-footer text-white text-start fs-4 pt-3">Goku</footer>
 			</div>
 		</div>
@@ -182,50 +184,50 @@
 	</div>
 </section>
 
-<section class="container-fluid bg-dark text-white">
-<form action="http://localhost:4200/apis/" id="contact" method="post" novalidate class="">
-	<div class="form-group">
-		<label for="name">Name</label>
-		<div class="input-group">
-			<div class="input-group-prepend">
-				<span class="input-group-text"><i class="fa fa-user"></i></span>
+<section class="container bg-dark text-white">
+	<form action="http://localhost:4200/apis/" id="contact" method="post" novalidate class="">
+		<div class="form-group">
+			<label for="name">Name</label>
+			<div class="input-group">
+				<!--			<div class="input-group-prepend">-->
+				<!--				<span class="input-group-text"><i class="fa fa-user"></i></span>-->
+				<!--			</div>-->
+				<input class="form-control" id="name" name="name" placeholder="Your Name" type="text">
 			</div>
-			<input class="form-control" id="name" name="name" placeholder="Your Name" type="text">
 		</div>
-	</div>
-	<div class="form-group">
-		<label for="email">Email</label>
-		<div class="input-group">
-			<div class="input-group-prepend">
-				<span class="input-group-text"><i class="fa fa-envelope"></i></span>
+		<div class="form-group">
+			<label for="email">Email</label>
+			<div class="input-group">
+				<!--			<div class="input-group-prepend">-->
+				<!--				<span class="input-group-text"><i class="fa fa-envelope"></i></span>-->
+				<!--			</div>-->
+				<input class="form-control" id="email" name="email" placeholder="Your Email" type="email">
 			</div>
-			<input class="form-control" id="email" name="email" placeholder="Your Email" type="email">
 		</div>
-	</div>
-	<div class="form-group">
-		<label for="subject">Subject</label>
-		<div class="input-group">
-			<div class="input-group-prepend">
-				<span class="input-group-text"><i class="fa fa-pencil"></i></span>
+		<div class="form-group">
+			<label for="subject">Subject</label>
+			<div class="input-group">
+				<!--			<div class="input-group-prepend">-->
+				<!--				<span class="input-group-text"><i class="fa fa-pencil"></i></span>-->
+				<!--			</div>-->
+				<input class="form-control" id="subject" name="subject" placeholder="Subject" type="text">
 			</div>
-			<input class="form-control" id="subject" name="subject" placeholder="Subject" type="text">
 		</div>
-	</div>
-	<div class="form-group">
-		<label for="message">Message</label>
-		<div class="input-group">
-			<div class="input-group-prepend">
-				<span class="input-group-text"><i class="fa fa-comment"></i></span>
+		<div class="form-group">
+			<label for="message">Message</label>
+			<div class="input-group">
+				<!--			<div class="input-group-prepend">-->
+				<!--				<span class="input-group-text"><i class="fa fa-comment"></i></span>-->
+				<!--			</div>-->
+				<textarea class="form-control" id="message" maxlength="2000" name="message"
+						  placeholder="Your Message (2000 characters max)" required
+						  rows="5"></textarea>
 			</div>
-			<textarea class="form-control" id="message" maxlength="2000" name="message"
-					  placeholder="Your Message (2000 characters max)" required
-					  rows="5"></textarea>
 		</div>
-	</div>
-	<div class="g-recaptcha" data-sitekey="6LeZqtgaAAAAAONroZKRa6n8DIa4QbLVM-sW6XZ4"></div>
-	<button class="btn btn-info" type="submit">Submit</button>
-	<button class="btn btn-default" type="reset">Reset</button>
-</form>
+		<div class="g-recaptcha" data-sitekey="6LeZqtgaAAAAAONroZKRa6n8DIa4QbLVM-sW6XZ4"></div>
+		<button class="btn btn-info" type="submit">Submit</button>
+		<button class="btn btn-info" type="reset">Reset</button>
+	</form>
 </section>
 
 
