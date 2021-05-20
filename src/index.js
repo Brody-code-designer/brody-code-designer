@@ -4,7 +4,6 @@ const morgan = require("morgan")
 const bodyParser = require("body-parser")
 const {check, validationResult} =require("express-validator")
 const ReCaptcha = require("express-recaptcha").RecaptchaV2
-require('dotenv').config()
 const Mailgun = require("mailgun-js")
 
 const mailgun = Mailgun({apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN})
