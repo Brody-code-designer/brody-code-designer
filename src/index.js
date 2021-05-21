@@ -4,6 +4,7 @@ const morgan = require("morgan")
 const bodyParser = require("body-parser")
 const {check, validationResult} =require("express-validator")
 const ReCaptcha = require("express-recaptcha").RecaptchaV2
+// require('dotenv').config()
 const Mailgun = require("mailgun-js")
 
 const mailgun = Mailgun({apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN})
@@ -38,7 +39,7 @@ const handlePostRequest = (request, response, next) => {
 
     //TODO remove when Docker is up and running
     response.append("Content-Type", "text/html")
-    response.append("Access-Control-Allow-Origin", "*")
+    // response.append("Access-Control-Allow-Origin", "*")
 
     if (request.recaptcha.error) {
         return response.send(Buffer.from(`<div class='alert alert-danger' role='alert'><strong>Oh snap!</strong>There was an error with Recaptcha please try again</div>`))
