@@ -11,11 +11,6 @@ body {
     color: inherit !important;
 }
 
-/*.cardImgSize {*/
-/*    width: 10rem;*/
-/*    height: 10rem;*/
-/*}*/
-
 .backgroundIMG {
     background-image: url("./imgs/pwp-background-placeholder.png");
     background-color: transparent;
