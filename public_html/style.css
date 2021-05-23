@@ -14,6 +14,7 @@ body {
 @font-face {
     font-family: "Saiyan-Sans";
     src: url("Saiyan-Sans.ttf") format("truetype");
+    font-display: block;
 }
 
 .saiyanFont {
