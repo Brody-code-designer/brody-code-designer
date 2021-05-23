@@ -26,8 +26,12 @@ body {
     /*height: 100vh;*/
 }
 
-.highlight-text {
-    color: #52eef5;
+.highlight-text-blue {
+    color: #8a7eee;
+}
+
+.backgroundSecondaryColor {
+    background-color: #8a7eee;
 }
 
 .custom-text-about-me {
