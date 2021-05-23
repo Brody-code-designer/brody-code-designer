@@ -11,18 +11,19 @@ body {
     color: inherit !important;
 }
 
-.backgroundIMG {
-    background-image: url("./imgs/pwp-background-placeholder.png");
-    background-color: transparent;
-    /*max-width: 100%;*/
-    /*height: auto;*/
-    /*max-width: 100vw;*/
-    /*height: 65vh;*/
-}
+/*.backgroundIMG {*/
+/*    background-image: url("./imgs/pwp-background-placeholder.png");*/
+/*    background-color: transparent;*/
+/*    !*max-width: 100%;*!*/
+/*    !*height: auto;*!*/
+/*    !*max-width: 100vw;*!*/
+/*    !*height: 65vh;*!*/
+/*}*/
 
 .backgroundIMGSize {
     width: 100vw;
-    height: 65vh;
+    /*height: 10vh;*/
+    /*height: 100vh;*/
 }
 
 .highlight-text {
