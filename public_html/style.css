@@ -44,7 +44,7 @@ body {
     /*height: 100vh;*/
 }
 
-.highlight-text-blue {
+.highlight-text-purple {
     color: #9488f1;
 }
 
@@ -54,4 +54,28 @@ body {
 
 .custom-text-about-me {
     line-height: 1.75em;
+}
+
+/*Nimbus animation on form click*/
+.nimbus {
+    animation-duration: 7s;
+    animation-name: slidein;
+    position: absolute;
+    z-index: 100;
+    opacity: 0;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 25%;
+        opacity: 1;
+    }
+
+    to {
+        margin-left: -25%;
+        width: 5%;
+        opacity: 0.5;
+    }
+
 }

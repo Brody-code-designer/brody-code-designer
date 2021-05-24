@@ -1,21 +1,109 @@
-window.addEventListener('load', (event) => {
-    // activateGIF()
-    // deActivateGIF()
+//Adds a bg color when mouse enters a nav link to give it a button look
+
+const bgLinkOne = document.querySelector("#linkBgOne")
+const bgLinkTwo = document.querySelector("#linkBgTwo")
+const bgLinkThree = document.querySelector("#linkBgThree")
+const bgLinkFour = document.querySelector("#linkBgFour")
+
+//link one
+bgLinkOne.addEventListener("mouseenter", (e) => {
+    bgLinkOne.style.backgroundColor = "#6c757d"
 })
 
-//function that activates the gif when scrolled into
-const activateGIF = function () {
-    let gif = `
-    <img src="imgs/front-page-gif-2.gif" class="backgroundIMGSize" alt="Galaxy">
-    `
+bgLinkOne.addEventListener("mouseleave", (e) => {
+    bgLinkOne.style.backgroundColor = ""
+})
 
-    document.getElementById("gifContainer").innerHTML = gif
-}
+//link two
+bgLinkTwo.addEventListener("mouseenter", (e) => {
+    bgLinkTwo.style.backgroundColor = "#6c757d"
+})
 
-const deActivateGIF = function () {
-    let img = `
-    <img src="imgs/pwp-background-placeholder.png" id="gifContainer" width="2500px" class="img-fluid px-0 backgroundIMG" alt="Galaxy">
-    `
+bgLinkTwo.addEventListener("mouseleave", (e) => {
+    bgLinkTwo.style.backgroundColor = ""
+})
 
-    document.getElementById("gifContainer").innerHTML = img
-}
+//link three
+bgLinkThree.addEventListener("mouseenter", (e) => {
+    bgLinkThree.style.backgroundColor = "#6c757d"
+})
+
+bgLinkThree.addEventListener("mouseleave", (e) => {
+    bgLinkThree.style.backgroundColor = ""
+})
+
+//link four
+bgLinkFour.addEventListener("mouseenter", (e) => {
+    bgLinkFour.style.backgroundColor = "#6c757d"
+})
+
+bgLinkFour.addEventListener("mouseleave", (e) => {
+    bgLinkFour.style.backgroundColor = ""
+})
+
+
+//Adds a border color when entered to give button look
+//If clicked will Automatically fill the form
+
+//service one
+const targetServiceOne = document.querySelector("#serviceOne")
+
+targetServiceOne.addEventListener("mouseenter", (e) => {
+    targetServiceOne.style.outline = "5px solid #FF852D"
+})
+
+targetServiceOne.addEventListener("mouseleave", (e) => {
+    targetServiceOne.style.outline = ""
+})
+
+//Auto fills subject field on form
+const targetInputOne = document.querySelector("#subject")
+
+targetServiceOne.addEventListener("click", (e) => {
+    targetInputOne.value = targetInputOne.value + "Service One Personal Website"
+    targetInputOne.style.color = "rebeccapurple"
+    targetInputOne.style.fontWeight = "bold"
+})
+
+//service two
+const targetServiceTwo = document.querySelector("#serviceTwo")
+
+targetServiceTwo.addEventListener("mouseenter", (e) => {
+    targetServiceTwo.style.outline = "5px solid #FF852D"
+})
+
+targetServiceTwo.addEventListener("mouseleave", (e) => {
+    targetServiceTwo.style.outline = ""
+})
+
+//Auto fills subject field on form
+const targetInputTwo = document.querySelector("#subject")
+
+targetServiceTwo.addEventListener("click", (e) => {
+    targetInputTwo.value = targetInputTwo.value + "Service Two Creative Website"
+    targetInputTwo.style.color = "rebeccapurple"
+    targetInputTwo.style.fontWeight = "bold"
+})
+
+//service three
+const targetServiceThree = document.querySelector("#serviceThree")
+
+targetServiceThree.addEventListener("mouseenter", (e) => {
+    targetServiceThree.style.outline = "5px solid #FF852D"
+})
+
+targetServiceThree.addEventListener("mouseleave", (e) => {
+    targetServiceThree.style.outline = ""
+})
+
+//Auto fills subject field on form
+const targetInputThree = document.querySelector("#subject")
+
+targetServiceThree.addEventListener("click", (e) => {
+    targetInputThree.value = targetInputThree.value + "Service Three E-Commerce"
+    targetInputThree.style.color = "rebeccapurple"
+    targetInputThree.style.fontWeight = "bold"
+})
+
+
+//Nimbus animation

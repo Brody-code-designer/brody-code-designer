@@ -28,10 +28,10 @@
 		</button>
 		<div class="collapse navbar-collapse changeFlexGrow" id="navbarSupportedContent">
 			<div class="navbar-nav ml-auto mb-2 mb-md-0 fs-4">
-				<a class="nav-link active text-white" aria-current="page" href="#aboutMe">About</a>
-				<a class="nav-link  text-white" href="#services">Services</a>
-				<a class="nav-link  text-white" href="#reviews">Testimonials</a>
-				<a class="nav-link" href="#contactMe"><span class="highlight-text-blue">Contact Me</span></a>
+				<a class="nav-link active text-white" aria-current="page" href="#aboutMe" id="linkBgOne">About</a>
+				<a class="nav-link  text-white" href="#services" id="linkBgTwo">Services</a>
+				<a class="nav-link  text-white" href="#reviews" id="linkBgThree">Testimonials</a>
+				<a class="nav-link" href="#contactMe" id="linkBgFour"><span class="highlight-text-purple">Contact Me</span></a>
 			</div>
 		</div>
 	</div>
@@ -39,7 +39,7 @@
 <div class="container-fluid bg-dark">
 	<div class="row">
 		<div class="col-md-7">
-			<p class="fst-italic fs-3 ms-md-5 mb-0 text-lg-center highlight-text-blue">Website Development Services</p>
+			<p class="fst-italic fs-3 ms-md-5 mb-0 text-lg-center highlight-text-purple">Website Development Services</p>
 		</div>
 	</div>
 </div>
@@ -54,19 +54,19 @@
 
 	<!--About me-->
 	<section class="container pb-4 pt-3 px-2 bg-dark text-white" id="aboutMe">
-		<div class="row px-5 pb-5 justify-content-between">
+		<div class="row px-2 pb-5 justify-content-between">
 			<div class="col-md-8">
 				<h1 class="fs-1 uppercutFont">About Saiyan Web Development</h1>
-				<p class="fs-4 custom-text-about-me">Welcome to the most <span class="highlight-text-blue">affordable</span>
-					and <span class="highlight-text-blue">reliable</span> website development service! With my service you
+				<p class="fs-4 custom-text-about-me">Welcome to the most <span class="highlight-text-purple">affordable</span>
+					and <span class="highlight-text-purple">reliable</span> website development service! With my service you
 					will get
-					your own <span class="highlight-text-blue">website</span> built from the ground up. I <span
-							class="highlight-text-blue">guarantee</span> your new
+					your own <span class="highlight-text-purple">website</span> built from the ground up. I <span
+							class="highlight-text-purple">guarantee</span> your new
 					website will look and work how you want. This is done by having virtual <span
-							class="highlight-text-blue">one-on-one</span>
+							class="highlight-text-purple">one-on-one</span>
 					meetings to ensure the
-					<span class="highlight-text-blue">design</span> and <span class="highlight-text-blue">functionality</span>
-					fits your needs and goals. You can <span class="highlight-text-blue">trust</span> that I can make your
+					<span class="highlight-text-purple">design</span> and <span class="highlight-text-purple">functionality</span>
+					fits your needs and goals. You can <span class="highlight-text-purple">trust</span> that I can make your
 					new website a reality!
 				</p>
 			</div>
@@ -90,9 +90,10 @@
 		</div>
 	</section>
 	<section class="container bg-dark text-white fs-4 pb-5 px-2">
-		<div class="row px-5">
+		<div class="row px-2">
 			<div class="col-md-4 my-3">
-				<div class="card border border-light border-3 bg-dark text-white">
+				<a href="#contactMe" style="text-decoration: none">
+				<div class="card border border-light border-3 bg-dark text-white" id="serviceOne">
 					<div class="card-body backgroundSecondaryColor text-white">
 						<h5 class="card-title backgroundSecondaryColor text-white fs-3 text-uppercase">Personal Website</h5>
 						<p class="card-text backgroundSecondaryColor text-white">You will get a one-page personally designed website.</p>
@@ -103,9 +104,11 @@
 						<li class="list-group-item bg-secondary text-white">Responsive on Mobile and Desktop</li>
 					</ul>
 				</div>
+				</a>
 			</div>
 			<div class="col-md-4 my-3">
-				<div class="card border border-light border-3 bg-dark text-white">
+				<a href="#contactMe" style="text-decoration: none">
+				<div class="card border border-light border-3 bg-dark text-white" id="serviceTwo">
 					<div class="card-body backgroundSecondaryColor text-white">
 						<h5 class="card-title backgroundSecondaryColor text-white fs-3 text-uppercase">Creative Website</h5>
 						<p class="card-text backgroundSecondaryColor text-white">You will get a multi-page uniquely designed website.</p>
@@ -117,9 +120,11 @@
 						<li class="list-group-item bg-secondary text-white">Cutting Edge</li>
 					</ul>
 				</div>
+				</a>
 			</div>
 			<div class="col-md-4 my-3">
-				<div class="card border border-light border-3 bg-dark text-white">
+				<a href="#contactMe" style="text-decoration: none">
+				<div class="card border border-light border-3 bg-dark text-white" id="serviceThree">
 					<div class="card-body backgroundSecondaryColor text-white">
 						<h5 class="card-title backgroundSecondaryColor text-white fs-3 text-uppercase">E-Commerce Website</h5>
 						<p class="card-text backgroundSecondaryColor text-white">You will get a multi-page online shop. </p>
@@ -132,6 +137,7 @@
 						<li class="list-group-item bg-secondary text-white">Secure Payment Checkout</li>
 					</ul>
 				</div>
+				</a>
 			</div>
 		</div>
 	</section>
@@ -186,6 +192,7 @@
 			<label for="subject">Subject</label>
 			<div class="input-group">
 				<input class="form-control" id="subject" name="subject" placeholder="Subject" type="text">
+				<div id="insertServiceOne"></div>
 			</div>
 		</div>
 		<div class="form-group">
@@ -197,8 +204,8 @@
 			</div>
 		</div>
 		<div class="g-recaptcha" data-sitekey="6LeZqtgaAAAAAONroZKRa6n8DIa4QbLVM-sW6XZ4"></div>
-		<button class="btn btn-info" type="submit">Submit</button>
-		<button class="btn btn-info" type="reset">Reset</button>
+		<button class="btn backgroundSecondaryColor" type="submit" id="nimbus">Submit</button>
+		<button class="btn backgroundSecondaryColor" type="reset">Reset</button>
 	</form>
 </section>
 
