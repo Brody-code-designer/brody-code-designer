@@ -106,4 +106,3 @@ targetServiceThree.addEventListener("click", (e) => {
 })
 
 
-//Nimbus animation

@@ -57,25 +57,25 @@ body {
 }
 
 /*Nimbus animation on form click*/
-.nimbus {
-    animation-duration: 7s;
-    animation-name: slidein;
-    position: absolute;
-    z-index: 100;
-    opacity: 0;
-}
+/*.animation {*/
+/*    animation-duration: 7s;*/
+/*    animation-name: slidein;*/
+/*    position: absolute;*/
+/*    z-index: 100;*/
+/*    opacity: 0;*/
+/*}*/
 
-@keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 25%;
-        opacity: 1;
-    }
+/*@keyframes slidein {*/
+/*    from {*/
+/*        margin-left: -25%;*/
+/*        width: 25%;*/
+/*        opacity: 1;*/
+/*    }*/
 
-    to {
-        margin-left: -25%;
-        width: 5%;
-        opacity: 0.5;
-    }
+/*    to {*/
+/*        margin-left: 100%;*/
+/*        width: 15%;*/
+/*        opacity: 1;*/
+/*    }*/
 
-}
+/*}*/
