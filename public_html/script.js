@@ -49,7 +49,7 @@ bgLinkFour.addEventListener("mouseleave", (e) => {
 const targetServiceOne = document.querySelector("#serviceOne")
 
 targetServiceOne.addEventListener("mouseenter", (e) => {
-    targetServiceOne.style.outline = "5px solid #FF852D"
+    targetServiceOne.style.outline = "5px solid rebeccapurple"
 })
 
 targetServiceOne.addEventListener("mouseleave", (e) => {
@@ -69,7 +69,7 @@ targetServiceOne.addEventListener("click", (e) => {
 const targetServiceTwo = document.querySelector("#serviceTwo")
 
 targetServiceTwo.addEventListener("mouseenter", (e) => {
-    targetServiceTwo.style.outline = "5px solid #FF852D"
+    targetServiceTwo.style.outline = "5px solid rebeccapurple"
 })
 
 targetServiceTwo.addEventListener("mouseleave", (e) => {
@@ -89,7 +89,7 @@ targetServiceTwo.addEventListener("click", (e) => {
 const targetServiceThree = document.querySelector("#serviceThree")
 
 targetServiceThree.addEventListener("mouseenter", (e) => {
-    targetServiceThree.style.outline = "5px solid #FF852D"
+    targetServiceThree.style.outline = "5px solid rebeccapurple"
 })
 
 targetServiceThree.addEventListener("mouseleave", (e) => {

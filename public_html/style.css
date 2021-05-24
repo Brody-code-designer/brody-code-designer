@@ -56,6 +56,16 @@ body {
     line-height: 1.75em;
 }
 
+.alienBubble {
+    width: 40vw;
+}
+
+@media (max-width: 768px) {
+    .alienBubble {
+        width: 85vw;
+    }
+}
+
 /*Nimbus animation on form click*/
 /*.animation {*/
 /*    animation-duration: 7s;*/
