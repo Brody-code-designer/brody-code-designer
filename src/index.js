@@ -51,7 +51,6 @@ const handlePostRequest = (request, response, next) => {
         const currentError = errors.array()[0]
         return response.send(Buffer.from(`<div class="alert alert-danger" role="alert"><strong>Oh snap!</strong> ${currentError.msg}</div>`))
     }
-    console.log(request.body)
     const {email, subject, name, message} = request.body
 
     const mailgunData = {
@@ -66,7 +65,7 @@ const handlePostRequest = (request, response, next) => {
             return(response.send(Buffer.from(`<div class='alert alert-danger' role='alert'><strong>Oh
                 snap!</strong> Unable to send email error with email sender.</div>`)))
         }
-        return response.send(Buffer.from("<div class='alert alert-success' role='alert'>Email successfully sent.</div>"))
+        return response.send(Buffer.from(`<div class='alert alert-success' role='alert'>Email successfully sent.</div>`))
     })
 }
 
