@@ -183,7 +183,10 @@
 
 <!--contact form-->
 <section class="container bg-dark text-white px-2">
-	<form action="./apis/" id="contact" method="post" novalidate class="">
+	<div class="row">
+		<div class="contact col">
+
+	<form action="./apis/" id="contact" method="post" novalidate>
 		<div class="form-group">
 			<label for="name">Name</label>
 			<div class="input-group">
@@ -214,8 +217,12 @@
 		<div class="g-recaptcha" data-sitekey="6LeZqtgaAAAAAONroZKRa6n8DIa4QbLVM-sW6XZ4"></div>
 		<button class="btn backgroundSecondaryColor" type="submit">Submit</button>
 		<button class="btn backgroundSecondaryColor" type="reset">Reset</button>
-
 	</form>
+
+	<div id="output-area"></div>
+
+		</div>
+	</div>
 </section>
 
 
@@ -229,7 +236,6 @@
 <script crossorigin="anonymous"
 		integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
 		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-
 <!-- jQuery Form, Validate, Additional Methods, -->
 <script crossorigin="anonymous"
 		integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA="

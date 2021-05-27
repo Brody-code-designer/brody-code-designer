@@ -1,4 +1,4 @@
-$(document).ready(
+$(document).ready(function () {
     $("#contact").validate({
         debug: true,
         errorClass: "alert alert-danger",
@@ -34,17 +34,20 @@ $(document).ready(
         submitHandler: (form) => {
             $("#contact").ajaxSubmit({
                 type: "POST",
-                url: $("contact").attr('action'),
+                url: $("#contact").attr('action'),
                 success: (ajaxOutput) => {
-                    $("output-area").css("display", "")
-                    $("output-area").html(ajaxOutput)
+                    $("#output-area").css("display", "")
+                    $("#output-area").html(ajaxOutput)
 
                     if($(".alert-success") >= 1) {
-                        $("#contact")[0].reset(0)
+                        $("#contact")[0].reset()
                     }
                 }
             })
         }
 
     })
-)
+})
+
+
+

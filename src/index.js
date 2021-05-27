@@ -3,11 +3,11 @@ const express = require("express")
 const morgan = require("morgan")
 const bodyParser = require("body-parser")
 const {check, validationResult} =require("express-validator")
-const ReCaptcha = require("express-recaptcha").RecaptchaV2
+const Recaptcha = require("express-recaptcha").RecaptchaV2
 // require('dotenv').config()
-const Mailgun = require("mailgun-js")
+const mailgun = require("mailgun-js")
 
-const mailgun = Mailgun({apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN})
+const mg = mailgun({apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN})
 
 const validation = [
     check("name", "A valid name is required").not().isEmpty().trim().escape(),
@@ -20,7 +20,7 @@ const validation = [
 
 //initialize Express
 const app = express()
-const recaptcha = new ReCaptcha(process.env.RECAPTCHA_SITE_KEY, process.env.RECAPTCHA_SECRET_KEY)
+const recaptcha = new Recaptcha(process.env.RECAPTCHA_SITE_KEY, process.env.RECAPTCHA_SECRET_KEY)
 
 // app.use allows for different middleware to be brought into Express
 // Morgan: a logger for express so that we have a record for debugging.
@@ -59,13 +59,13 @@ const handlePostRequest = (request, response, next) => {
         subject: `${email} :${subject}`,
         text: `${message}`
     }
-    mailgun.messages().send(mailgunData, (error) => {
+    mg.messages().send(mailgunData, (error) => {
         if (error) {
             console.log(error)
             return(response.send(Buffer.from(`<div class='alert alert-danger' role='alert'><strong>Oh
                 snap!</strong> Unable to send email error with email sender.</div>`)))
         }
-        return response.send(Buffer.from(`<div class='alert alert-success' role='alert'>Email successfully sent.</div>`))
+        return response.send(Buffer.from("<div class='alert alert-success' role='alert'>Email successfully sent.</div>"))
     })
 }
 
