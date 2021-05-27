@@ -56,14 +56,14 @@ targetServiceOne.addEventListener("mouseleave", (e) => {
     targetServiceOne.style.outline = ""
 })
 
-//Auto fills subject field on form
-const targetInputOne = document.querySelector("#subject")
-
-targetServiceOne.addEventListener("click", (e) => {
-    targetInputOne.value = targetInputOne.value + "Service One Personal Website"
-    targetInputOne.style.color = "rebeccapurple"
-    targetInputOne.style.fontWeight = "bold"
-})
+// //Auto fills subject field on form
+// const targetInputOne = document.querySelector("#subject")
+//
+// targetServiceOne.addEventListener("click", (e) => {
+//     targetInputOne.value = targetInputOne.value + "Service One Personal Website"
+//     targetInputOne.style.color = "rebeccapurple"
+//     targetInputOne.style.fontWeight = "bold"
+// })
 
 //service two
 const targetServiceTwo = document.querySelector("#serviceTwo")
@@ -77,13 +77,13 @@ targetServiceTwo.addEventListener("mouseleave", (e) => {
 })
 
 //Auto fills subject field on form
-const targetInputTwo = document.querySelector("#subject")
-
-targetServiceTwo.addEventListener("click", (e) => {
-    targetInputTwo.value = targetInputTwo.value + "Service Two Creative Website"
-    targetInputTwo.style.color = "rebeccapurple"
-    targetInputTwo.style.fontWeight = "bold"
-})
+// const targetInputTwo = document.querySelector("#subject")
+//
+// targetServiceTwo.addEventListener("click", (e) => {
+//     targetInputTwo.value = targetInputTwo.value + "Service Two Creative Website"
+//     targetInputTwo.style.color = "rebeccapurple"
+//     targetInputTwo.style.fontWeight = "bold"
+// })
 
 //service three
 const targetServiceThree = document.querySelector("#serviceThree")
@@ -96,13 +96,19 @@ targetServiceThree.addEventListener("mouseleave", (e) => {
     targetServiceThree.style.outline = ""
 })
 
-//Auto fills subject field on form
-const targetInputThree = document.querySelector("#subject")
+// //Auto fills subject field on form
+// const targetInputThree = document.querySelector("#subject")
+//
+// targetServiceThree.addEventListener("click", (e) => {
+//     targetInputThree.value = targetInputThree.value + "Service Three E-Commerce"
+//     targetInputThree.style.color = "rebeccapurple"
+//     targetInputThree.style.fontWeight = "bold"
+// })
 
-targetServiceThree.addEventListener("click", (e) => {
-    targetInputThree.value = targetInputThree.value + "Service Three E-Commerce"
-    targetInputThree.style.color = "rebeccapurple"
-    targetInputThree.style.fontWeight = "bold"
-})
 
-
+// const placeImg = function() {
+//     let nimbus = `
+//     <img src="imgs/nimbus.png" />
+//     `
+//     document.querySelector("#output-area").innerHTML = nimbus
+// }
