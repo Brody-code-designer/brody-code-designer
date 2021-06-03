@@ -64,3 +64,7 @@ body {
     }
 }
 
+.footer {
+    height: 5vh;
+    background-color: #212529;
+}
