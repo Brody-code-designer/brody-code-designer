@@ -13,7 +13,7 @@
 - **[AlienGram:](https://github.com/now-in-orbit/alien-gram)** A social media website created with a group while at coding bootcamp. Tools include React, Express, Redux, Bootstrap, Docker, TypeScript, and much more. https://bit.ly/alien-gram  
 
 ###What You Should know about me✨
-- 🔭 I’m currently working on becoming a Professional Fullstack Web Developer.
+- 🔭 I’m currently working on building web applications using React!
 - 🌱 I’m currently learning Three.js and how to develop a VR Website.  
 - 👯 I’m looking to collaborate on fun projects that will improve my skills!
 - 🤔 I’m looking for help with understanding how all of these tools work together in the larger picture.
