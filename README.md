@@ -3,6 +3,8 @@
 ##Welcome to my GitHub!!! Here you will find many of my personal projects as well as assignments I did while I was at Coding Bootcamp. At the Bootcamp I was trained to become a professional Fullstack Web Developer using the MERN Stack. 
 
 ###Current Projects:
+- **[VR-Personal-Portfolio](https://github.com/Brody-code-designer/vr-personal-portfolio)** My Personal Portfolio is in a 3d environment with the ability to enable Virtual Reality. To accomplish this I'm using these NodeJs libraries Three.js, react-three/fiber, react-xr, and drei. 
+
 - **[XP-Exercise:](https://github.com/Brody-code-designer/XP-Exercise)** A game that encourages exercise by following along with 3D avatars. Tools used include React, React-Three/Fiber, and React Bootstrap. www.expninja.com
 
 - **Secret Code:** A personal blog for coding tips, tricks, and secrets. The primary tool used to develop this site is WordPress and a Blocksy theme. www.brodywebdev.com
