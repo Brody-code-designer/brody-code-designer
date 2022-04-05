@@ -1,6 +1,6 @@
 ### Hello cool coders 🐉
 
-## Welcome 👽  Here you will find many of my personal projects built with a modified MERN Stack. I try to enhance my skills daily by writing code for awesome applications.  
+## Here you will find many of my personal projects built with a modified MERN Stack. I try to enhance my skills daily by writing code for awesome applications.  
 
 ### Current Projects:
 - **[VR-Personal-Portfolio](https://github.com/Brody-code-designer/vr-personal-portfolio)** My Personal Portfolio is in a 3d environment with the ability to enable Virtual Reality. To accomplish this I'm using these NodeJs libraries Three.js, react-three/fiber, react-xr, and drei. www.mycodingskillz.com
@@ -16,11 +16,12 @@
 
 
 ### Work Experience: 
+- **Gesture Back-end Engineer:** At Gesture I built ETL pipelines for data integration between databases and the CRM.  
 - **Bootcamp Assistant Instructor:** As a bootcamp instructor I helped students build web applications using a modified MERN stack. 
 
 
 ### Cool Things About Me
-- 🕶 JavaScript is currently my most utilized coding language
+- 🕶 JavaScript is the name of the game
 - 🌱 My focus is utilizing my development skills
 - 👯 I’m looking to collaborate on fun projects that will improve my skills!
 - 💬 Feel free to ask me about any of my repositories or projects.
